@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/css/parentsForm.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <h2>Datos del padre o Tutor</h2>
+        <div class="divs">
+            <div>
+                <input type="text" name="nombreest" placeholder="Nombre">
+                <label>
+                    <input type="text" name="apellidoest" placeholder="Apellido">
+                </label>
+                <label>
+                    <input type="date" name="fecha" placeholder="Fecha">
+                </label>
+
+                <div class="sexo">
+                    <div>
+                        <input type="radio" name="sexo" id="">
+                        <span>masculino</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" id="">
+                        <span>femenino</span>
+                    </div>
+                </div>
+                <label>
+                    <input type="list" list="pmt" placeholder="Madre, padre o tutor">
+                    <datalist id="pmt">
+                        <option value="padre"></option>
+                        <option value="madre"></option>
+                        <option value="tutor"></option>
+                    </datalist>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="text" name="tel" placeholder="Telefono">
+                </label>
+                <label>
+                    <input type="text" name="cell" placeholder="Celular">
+                </label>
+                <label>
+                    <input type="text" name="trabajo" placeholder="Trabajo">
+                </label>
+                <label>
+                    <input type="number" name="tranajotel" placeholder="Telefono trabajo">
+                </label>
+                <label>
+                    <input type="text" name="rne" placeholder="RNE">
+                </label>
+            </div>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>

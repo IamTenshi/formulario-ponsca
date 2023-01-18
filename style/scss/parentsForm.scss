@@ -1,0 +1,119 @@
+//vars
+$blanco: rgb(208, 208, 208);
+$azulito: rgba(14, 119, 225, 0.5);
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../../img/fondo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin: auto;
+    margin-top: 25vh;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+h2 {
+    margin: auto;
+    margin-bottom: 1em;
+    color: $blanco;
+}
+
+.divs {
+    display: flex;
+    flex-direction: row;
+}
+
+div{
+    div {
+        display: flex;
+        flex-direction: column;
+        margin-right: 3em;
+    }
+}
+
+input {
+    margin: .5em;
+    outline: none;
+    border: none;
+    width: 115%;
+    background: transparent;
+    border-bottom: 2px solid $azulito;
+    color: $blanco;
+
+    &[type=date]::-webkit-datetime-edit-day-field,
+    &[type=date]::-webkit-datetime-edit-month-field,
+    &[type=date]::-webkit-datetime-edit-year-field,
+    &[type=date]::-webkit-datetime-edit-text{
+        color: gray;
+    }
+
+    &[type="number"]{
+        outline: none;
+        background: transparent;
+        border-bottom: 2px solid $azulito;
+
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    }
+    
+    &[type="date"]{
+        outline: none;
+        background: transparent;
+        border-bottom: 2px solid $azulito;
+    }
+
+    &:hover{
+        border-bottom-color: rgba(14, 119, 225, 0.75);
+    }
+
+    &[type^=s]{
+        position: relative;
+        right: .5%;
+        width: 73.5%;
+        margin-top: 2em;
+    }
+}
+
+.sexo {
+    width: 100%;
+    position: relative;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: .175em;
+
+    div {
+        display: flex;
+        flex-direction: row;
+
+        &:first-child, &:last-child {
+            width: 50%;
+            margin: 0;
+            span {
+                color: gray;
+                position: relative;
+                top: 3px;
+            }
+            input {
+                margin: .5em;
+                width: 1em;
+
+            }
+        }
+    }
+}
+

@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../../img/fondo.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  margin: auto;
+  margin-top: 25vh;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+h2 {
+  margin: auto;
+  margin-bottom: 1em;
+  color: rgb(208, 208, 208);
+}
+
+.divs {
+  display: flex;
+  flex-direction: row;
+}
+
+div div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3em;
+}
+
+input {
+  margin: 0.5em;
+  outline: none;
+  border: none;
+  width: 115%;
+  background: transparent;
+  border-bottom: 2px solid rgba(14, 119, 225, 0.5);
+  color: rgb(208, 208, 208);
+}
+input[type=date]::-webkit-datetime-edit-day-field, input[type=date]::-webkit-datetime-edit-month-field, input[type=date]::-webkit-datetime-edit-year-field, input[type=date]::-webkit-datetime-edit-text {
+  color: gray;
+}
+input[type=number] {
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid rgba(14, 119, 225, 0.5);
+}
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type=date] {
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid rgba(14, 119, 225, 0.5);
+}
+input:hover {
+  border-bottom-color: rgba(14, 119, 225, 0.75);
+}
+input[type^=s] {
+  position: relative;
+  right: 0.5%;
+  width: 73.5%;
+  margin-top: 2em;
+}
+
+.sexo {
+  width: 100%;
+  position: relative;
+  left: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 0.175em;
+}
+.sexo div {
+  display: flex;
+  flex-direction: row;
+}
+.sexo div:first-child, .sexo div:last-child {
+  width: 50%;
+  margin: 0;
+}
+.sexo div:first-child span, .sexo div:last-child span {
+  color: gray;
+  position: relative;
+  top: 3px;
+}
+.sexo div:first-child input, .sexo div:last-child input {
+  margin: 0.5em;
+  width: 1em;
+}
