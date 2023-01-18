@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/css/studentsForm.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <title>PONSCA</title>
+</head>
+
+<body>
+    <form action="">
+        <h2 tabindex="1">Datos del estudiante</h2>
+        <div class="divs">
+            <div>
+                <input type="text" name="nombreEST" placeholder="Nombre" tabindex="2">
+                <label>
+                    <input type="text" name="apellidoEST" placeholder="Apellido" tabindex="3">
+                </label>
+                <label>
+                    <input type="date" name="fecha" placeholder="Fecha" tabindex="4">
+                </label>
+
+                <div class="sexo">
+                    <div>
+                        <input type="radio" name="sexo" id="" tabindex="5">
+                        <span>masculino</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" id="" tabindex="6">
+                        <span>femenino</span>
+                    </div>
+                </div>
+                <label>
+                    <input type="number" name="edad" placeholder="Edad" tabindex="7">
+                </label>
+                <label>
+                    <input type="text" name="direccion" placeholder="Dirección" tabindex="8">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="text" name="tel" placeholder="Telefono" tabindex="9">
+                </label>
+                <label>
+                    <input type="text" name="cell" placeholder="Celular" tabindex="10">
+                </label>
+                <label>
+                    <input type="list" list="hermanos" placeholder="Tiene hermanos en el PONSCA" tabindex="11">
+                    <datalist id="hermanos">
+                        <option value="ninguno"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4 o más"></option>
+                    </datalist>
+                </label>
+                <label>
+                    <input type="list" list="seguro" placeholder="Tiene seguro médico" tabindex="12">
+                    <datalist id="seguro">
+                        <option value="si"></option>
+                        <option value="no"></option>
+                    </datalist>
+                </label>
+                <label>
+                    <input type="text" name="sangreTipo" placeholder="Tipo de sangre" tabindex="13">
+                </label>
+                <label>
+                    <input type="text" name="enfermedad" placeholder="Alergia o enfermedad, especificar" tabindex="14">
+                </label>
+            </div>
+        </div>
+        <input class="emergencia" type="text" name="emergencia" placeholder="En una emergencia con quién contáctamos(colocar parentesco y número)" tabindex="15">
+        <input type="submit" value="Enviar" tabindex="16">
+    </form>
+
+</body>
+
+</html>
