@@ -60,19 +60,24 @@ input {
     &:focus-visible {
         background-color: rgba(208, 208, 208, 0.1);
     }
+}
 
-    &[type^=s]{
-        position: relative;
-        right: .5%;
-        width: 73.5%;
-        margin-top: 2em;
-        border: none;
-        &:hover {
-            background-color: rgba(208, 208, 208, 0.1);
-            transition: background-color .15s;
-        }
-        &:active{
-            background-color: rgba(208, 208, 208, 0.15);
-        }
+button {
+    margin: .5em;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid $azulito;
+    color: $blanco;
+    position: relative;
+    right: .5%;
+    width: 73.5%;
+    margin-top: 2em;
+    border: none;
+    &:hover {
+        background-color: rgba(208, 208, 208, 0.1);
+        transition: background-color .15s;
+    }
+    &:active{
+        background-color: rgba(208, 208, 208, 0.15);
     }
 }
