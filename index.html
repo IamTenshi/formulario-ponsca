@@ -15,13 +15,8 @@
         <h2 tabindex="1">Datos del estudiante</h2>
         <div class="divs">
             <div>
-                <input type="text" name="nombreEST" placeholder="Nombre" tabindex="2">
-                <label>
-                    <input type="text" name="apellidoEST" placeholder="Apellido" tabindex="3">
-                </label>
-                <label>
-                    <input type="date" name="fecha" placeholder="Fecha" tabindex="4">
-                </label>
+                <input type="text" name="nombre-apellido" placeholder="Nombre y apellido" tabindex="2">
+                <input type="date" name="fecha" placeholder="Fecha" tabindex="4">
 
                 <div class="sexo">
                     <div>
@@ -33,85 +28,57 @@
                         <span>femenino</span>
                     </div>
                 </div>
-                <label>
-                    <input type="number" name="edad" placeholder="Edad" tabindex="7">
-                </label>
-                <label>
-                    <input type="text" name="direccion" placeholder="Dirección" tabindex="8">
-                </label>
+
+                <input type="text" name="direccion" placeholder="Dirección" tabindex="8">
+                <input type="text" name="tel" placeholder="Telefono" tabindex="9">
             </div>
             <div>
-                <label>
-                    <input type="text" name="tel" placeholder="Telefono" tabindex="9">
-                </label>
-                <label>
-                    <input type="text" name="cell" placeholder="Celular" tabindex="10">
-                </label>
-                <label>
-                    <input type="list" list="hermanos" placeholder="Tiene hermanos en el PONSCA" tabindex="11">
-                    <datalist id="hermanos">
-                        <option value="ninguno"></option>
-                        <option value="1"></option>
-                        <option value="2"></option>
-                        <option value="3"></option>
-                        <option value="4 o más"></option>
-                    </datalist>
-                </label>
-                <label>
-                    <input type="list" list="seguro" placeholder="Tiene seguro médico" tabindex="12">
-                    <datalist id="seguro">
-                        <option value="si"></option>
-                        <option value="no"></option>
-                    </datalist>
-                </label>
-                <label>
-                    <input type="text" name="sangreTipo" placeholder="Tipo de sangre" tabindex="13">
-                </label>
-                <label>
-                    <input type="text" name="enfermedad" placeholder="Alergia o enfermedad, especificar" tabindex="14">
-                </label>
+                <input type="text" name="cell" placeholder="Celular" tabindex="10">
+                <input type="list" list="hermanos" placeholder="Tiene hermanos en el PONSCA" tabindex="11">
+                <datalist id="hermanos">
+                    <option value="ninguno"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4 o más"></option>
+                </datalist>
+
+                <input type="list" list="seguro" placeholder="Tiene seguro médico" tabindex="12">
+                <datalist id="seguro">
+                    <option value="si"></option>
+                    <option value="no"></option>
+                </datalist>
+
+                <input type="text" name="sangreTipo" placeholder="Tipo de sangre" tabindex="13">
+                <input type="text" name="enfermedad" placeholder="Alergia o enfermedad, especificar" tabindex="14">
             </div>
         </div>
+
         <input class="emergencia" type="text" name="emergencia" placeholder="En una emergencia con quién contáctamos(colocar parentesco y número)" tabindex="15">
-        
+
         <h2 class="h2-padres" tabindex="1">Datos del padre o Tutor</h2>
+
         <div class="divs">
             <div>
                 <input type="text" name="nombrePTM" placeholder="Nombre" tabindex="2">
-                <label>
-                    <input type="text" name="apellidoPTM" placeholder="Apellido" tabindex="3">
-                </label>
-    
-                <label>
-                    <input type="list" list="pmt" placeholder="Madre, padre o tutor" tabindex="3">
-                    <datalist id="pmt">
-                        <option value="padre"></option>
-                        <option value="madre"></option>
-                        <option value="tutor"></option>
-                    </datalist>
-                </label>
-                <label>
-                    <input type="tel" name="tel" placeholder="Telefono" tabindex="4">
-                </label>
+                <input type="text" name="apellidoPTM" placeholder="Apellido" tabindex="3">
+                <input type="list" list="pmt" placeholder="Madre, padre o tutor" tabindex="3">
+                <datalist id="pmt">
+                    <option value="padre"></option>
+                    <option value="madre"></option>
+                    <option value="tutor"></option>
+                </datalist>
+                <input type="tel" name="tel" placeholder="Telefono" tabindex="4">
             </div>
             <div>
-                <label>
-                    <input type="tel" name="cell" placeholder="Celular" tabindex="5">
-                </label>
-                <label>
-                    <input type="text" name="trabajo" placeholder="Trabajo" tabindex="6">
-                </label>
-                <label>
-                    <input type="text" name="trabajoPuesto" placeholder="Puesto de trabajo" tabindex="7">
-                </label>
-                <label>
-                    <input type="tel" name="tranajoTel" placeholder="Telefono trabajo" tabindex="8">
-                </label>
+                <input type="tel" name="cell" placeholder="Celular" tabindex="5">
+                <input type="text" name="trabajo" placeholder="Trabajo" tabindex="6">
+                <input type="text" name="trabajoPuesto" placeholder="Puesto de trabajo" tabindex="7">
+                <input type="tel" name="tranajoTel" placeholder="Telefono trabajo" tabindex="8">
             </div>
         </div>
         <button type="submit" tabindex="9">Send</button>
     </form>
-
 </body>
 
 </html>

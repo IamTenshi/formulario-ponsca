@@ -18,7 +18,7 @@ form {
   width: 50%;
   margin: auto;
   margin-top: 3vh;
-  padding: 2em;
+  padding: 3em;
   border-radius: 1em;
 }
 
@@ -122,7 +122,7 @@ button:active {
 }
 
 .emergencia {
-  width: 73.5%;
+  width: 77.5%;
   position: relative;
   right: 0.6%;
 }
