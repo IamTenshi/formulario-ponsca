@@ -17,8 +17,8 @@
 
         //chequea que no haya campos vacios
         $post = (isset($nombre_y_apellido) && !empty($fecha)) && (isset($sexo)
-        && !empty($direccion)) && (isset($tel) && !empty($cell)) && (isset($hermanos) 
-        && !empty($seguro) && !empty($sangreTipo) && !empty($enfermedad) && !empty($emergencia));
+        && !empty($direccion)) && (isset($hermanos) && !empty($seguro)
+        && !empty($sangreTipo) && !empty($enfermedad) && !empty($emergencia));
 
         if (!$post) {
             array_push($errors, 'campo_vacio');
