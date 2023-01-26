@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url(../../img/fondo.jpg);
+  background-image: url(../../assets/img/fondo.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,11 +13,12 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   width: 50%;
   margin: auto;
-  margin-top: 25vh;
-  padding: 2em;
+  margin-top: 3vh;
+  padding: 3em;
   border-radius: 1em;
 }
 
@@ -25,6 +26,10 @@ h2 {
   margin: auto;
   margin-bottom: 1em;
   color: rgb(208, 208, 208);
+}
+
+.h2-padres {
+  margin-top: 2em;
 }
 
 .divs {
@@ -66,11 +71,28 @@ input[type=date] {
 input:hover {
   border-bottom-color: rgba(14, 119, 225, 0.75);
 }
-input[type^=s] {
+input:focus-visible {
+  background-color: rgba(208, 208, 208, 0.1);
+}
+
+button {
+  margin: 0.5em;
+  outline: none;
+  border: none;
+  background: transparent;
+  border: none;
+  color: rgb(208, 208, 208);
   position: relative;
   right: 0.5%;
-  width: 73.5%;
+  width: 77.5%;
   margin-top: 2em;
+}
+button:hover {
+  background-color: rgba(208, 208, 208, 0.1);
+  transition: background-color 0.15s;
+}
+button:active {
+  background-color: rgba(208, 208, 208, 0.15);
 }
 
 .sexo {
@@ -97,4 +119,10 @@ input[type^=s] {
 .sexo div:first-child input, .sexo div:last-child input {
   margin: 0.5em;
   width: 1em;
+}
+
+.emergencia {
+  width: 77.5%;
+  position: relative;
+  right: 0.6%;
 }
