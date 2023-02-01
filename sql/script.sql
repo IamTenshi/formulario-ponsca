@@ -16,4 +16,12 @@ CREATE TABLE IF NOT EXISTS `ponsca`.`students` (
   `sangre_tipo` VARCHAR(3) NOT NULL,
   `alergia_enfermedad` VARCHAR(45) NOT NULL,
   `contacto_emergencia` VARCHAR(64) NOT NULL,
+  `nombre_padre` VARCHAR(16) NOT NULL,
+  `apellido_padre` VARCHAR(32) NOT NULL,
+  `pmt` VARCHAR(5) NOT NULL,
+  `telefono_padre` VARCHAR(12) NOT NULL,
+  `celular_padre` VARCHAR(12) NOT NULL,
+  `trabajo` VARCHAR(12),
+  `puesto_de_trabajo` VARCHAR(12),
+  `celular_trabajo_padre` VARCHAR(12),
   PRIMARY KEY (`ID`))
