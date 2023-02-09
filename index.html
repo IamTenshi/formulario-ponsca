@@ -15,8 +15,8 @@
         <h2 tabindex="1">Datos del estudiante</h2>
         <div class="divs">
             <div>
-                <input type="text" name="nombre-apellido" placeholder="Nombre y apellido" tabindex="2">
-                <input type="date" name="fecha" placeholder="Fecha" tabindex="3">
+                <input type="text" name="nombre-apellido" placeholder="Nombre y apellido" tabindex="2" required>
+                <input type="date" name="fecha" placeholder="Fecha" tabindex="3" required>
 
                 <div class="sexo">
                     <div>
@@ -29,12 +29,12 @@
                     </div>
                 </div>
 
-                <input type="text" name="direccion" placeholder="Dirección" tabindex="6">
+                <input type="text" name="direccion" placeholder="Dirección" tabindex="6" required>
                 <input type="text" name="tel" placeholder="Telefono" tabindex="7">
             </div>
             <div>
                 <input type="text" name="cell" placeholder="Celular" tabindex="8">
-                <input type="list" name="hermanos" list="hermanos" placeholder="Tiene hermanos en el PONSCA" tabindex="9">
+                <input type="list" name="hermanos" list="hermanos" placeholder="Tiene hermanos en el PONSCA" tabindex="9" required>
                 <datalist id="hermanos">
                     <option value="0"></option>
                     <option value="1"></option>
@@ -43,38 +43,38 @@
                     <option value="4"></option>
                 </datalist>
 
-                <input type="list" name="seguro" list="seguro" placeholder="Tiene seguro médico" tabindex="10">
+                <input type="list" name="seguro" list="seguro" placeholder="Tiene seguro médico" tabindex="10" required>
                 <datalist id="seguro">
                     <option value="si"></option>
                     <option value="no"></option>
                 </datalist>
 
-                <input type="text" name="sangreTipo" placeholder="Tipo de sangre" tabindex="11">
+                <input type="text" name="sangreTipo" placeholder="Tipo de sangre" tabindex="11" required>
                 <input type="text" name="enfermedad" placeholder="Alergia o enfermedad, especificar" tabindex="12">
             </div>
         </div>
 
-        <input class="emergencia" type="text" name="emergencia" placeholder="En una emergencia con quién contáctamos(colocar parentesco y número)" tabindex="13">
+        <input class="emergencia" type="text" name="emergencia" placeholder="En una emergencia con quién contáctamos(colocar parentesco y número)" tabindex="13" required>
 
         <h2 class="h2-padres" tabindex="14">Datos del padre o Tutor</h2>
 
         <div class="divs">
             <div>
-                <input type="text" name="nombrePTM" placeholder="Nombre" tabindex="15">
-                <input type="text" name="apellidoPTM" placeholder="Apellido" tabindex="16">
-                <input type="list" name="pmt" list="pmt" placeholder="Madre, padre o tutor" tabindex="17">
+                <input type="text" name="nombrePMT" placeholder="Nombre" tabindex="15" required>
+                <input type="text" name="apellidoPMT" placeholder="Apellido" tabindex="16" required>
+                <input type="list" name="pmt" list="pmt" placeholder="Madre, padre o tutor" tabindex="17" required>
                 <datalist id="pmt">
                     <option value="padre"></option>
                     <option value="madre"></option>
                     <option value="tutor"></option>
                 </datalist>
-                <input type="tel" name="tel-padre" placeholder="Telefono" tabindex="18">
+                <input type="tel" name="tel-padre" placeholder="Telefono" tabindex="18" required>
             </div>
             <div>
-                <input type="tel" name="cell-padre" placeholder="Celular" tabindex="19">
+                <input type="tel" name="cell-padre" placeholder="Celular" tabindex="19" required>
                 <input type="text" name="trabajo" placeholder="Trabajo" tabindex="20">
                 <input type="text" name="trabajoPuesto" placeholder="Puesto de trabajo" tabindex="21">
-                <input type="tel" name="tranajoTel" placeholder="Telefono trabajo" tabindex="22">
+                <input type="tel" name="trabajoTel" placeholder="Telefono trabajo" tabindex="22">
             </div>
         </div>
         <button name="submit" type="submit" tabindex="23">Send</button>
